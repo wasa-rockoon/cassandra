@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sim:
+    restart: always
+    build: .
+    container_name: 'sim'
+    working_dir: '/app/'
+    tty: true
+    volumes:
+      - ./share:/app/share
